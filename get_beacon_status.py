@@ -22,17 +22,24 @@ __version__ = '0.1'
 #           that the setup.py script for get_beacon_status.py is in the same
 #           directory. From the command prompt, execute the command:
 #           "python setup.py py2exe"
-#       3. Build an installer
+#       3. Change the application icon
+#           Due to a bug in py2exe, the taskbar icon on Windows 7+ is not
+#           created correctly. To change the icon, open the executable file
+#           in Resource Hacker and replace both the Icon file and Icon Group
+#           file with the programs icon which is located within the icons
+#           folder of the dist folder.
+#       4. Build an installer
 #           Open the "installer_script.iss" file, which is located within the
 #           "dist" folder, with InnoSetup. Compile the script and run the
 #           installer to verify that the setup.exe package works correctly.
 #           The setup.exe package is located within the Output folder in dist.
 #
 # Packages and Resources:
-#   wxPython  - http://www.wxpython.org/
-#   pyodbc    - https://github.com/mkleehammer/pyodbc
-#   py2exe    - http://www.py2exe.org/
-#   InnoSetup - http://www.jrsoftware.org/isinfo.php
+#   wxPython        - http://www.wxpython.org/
+#   pyodbc          - https://github.com/mkleehammer/pyodbc
+#   py2exe          - http://www.py2exe.org/
+#   Inno Setup      - http://www.jrsoftware.org/isinfo.php
+#   Resource Hacker - http://www.angusj.com/resourcehacker/
 #
 # -----------------------------------------------------------------------------
 

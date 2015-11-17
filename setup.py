@@ -21,8 +21,6 @@ for files in os.listdir(r'C:\Users\Duncan Lowder\PycharmProjects\Beacon Status\i
         f2 = 'icons', [f1]
         icon_files.append(f2)
 
-print icon_files
-
 setup(data_files=icon_files,
       options={"py2exe": {"includes": "decimal", "dll_excludes": ["MSVCP90.dll", "HID.DLL", "w9xpopen.exe"]}},
       windows=[{'script': 'get_beacon_status.py',
